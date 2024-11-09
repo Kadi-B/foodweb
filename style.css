@@ -1,0 +1,427 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-1: #f0f0f0;; 
+    --text-color:black; 
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 12pt;
+    font-family: Poppins, Segoe UI, Tahoma, sans-serif;
+}
+nav{
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+nav a:hover{
+    color: green;
+}
+nav .home-link{
+    margin-right: auto;
+}
+nav svg{
+    fill: var(--text-color);
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+/*---end of navbar---*/
+
+/*---tasty food section section ----*/
+
+#tasty h1{
+    font-size: 70px;
+    color: green;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.tastymore p{
+    color: black;
+    font-size: 40px;
+    line-height: 1.6;
+}
+
+/*---the part that will arrange the h, p and img---*/
+.foodtasty{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.tastyimg{
+    flex-basis: 50%;
+    min-width: 100px;
+    
+}
+.tastyimg img{
+    max-width: 100%;
+    padding: 50px 0;
+    
+}
+.btn{
+    padding: 10px 20px;
+    margin-top: 30px; 
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #0e7728; 
+    border-radius: 0.4em;
+    color: white;
+}
+
+/*---end of tasty food section--*/
+
+
+/*---moretasty food section section ----*/
+
+#moretasty h4{
+    color: green;
+    font-weight: bold;
+}
+#moretasty h1{
+    font-size: 50px;
+    color:black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.moretasty p{
+    color:green;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/*---the part that will arrange the h, p and img---*/
+.morefoodtasty{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.moretastyimg{
+    flex-basis: 50%;
+    min-width: 100px;
+    
+}
+.moretastyimg img{
+    max-width: 80%;
+    padding: 50px 0; 
+}
+
+/*---service----*/
+#offering h1, #offering h4{
+    text-align: center;
+}
+#offering h4{
+    color: green;
+}
+.amazing{
+    display: flex;
+
+}
+.service{
+    flex-basis: 40%; 
+    min-width: 100px;
+    margin: 80px 80px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.service h3, .service p{
+    font-size: 14px;
+    text-align: center;
+}
+
+/*---end of tasty food section--*/
+
+/*---menu part----*/
+
+
+
+.special {
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.menu-grid{
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-item button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item button:hover {
+    background-color: #219150;
+}
+
+/*---second menu part--*/
+.menu{
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 20px;
+}
+
+/*---contact section ----*/
+
+#contact h1{
+    font-size: 70px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.con p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+.con h4{
+    color: green;
+}
+
+.contactus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 50px;
+}
+/*---end of contact section--*/
+
+/*---footer part---*/
+.footer {
+    display: flex;
+    justify-content: space-around;
+    color: #333;
+    margin-left: 100px;
+    margin-right: 80px;
+    padding-top: 200px;
+}
+.footer .column {
+    width: 20%;
+}
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom: 8px;
+}
+.footer a {
+    text-decoration: none;
+    color: #333;
+}
+.footer a:hover {
+    color: #3bb74d; /* Hover color */
+}
+.footer h3:hover{
+    color: green;
+}
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.footer .social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+
+@media(max-width: 450px){
+    /*---navbar begins here--*/
+    .links-container{
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 300px;
+
+    background-color: green;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
+    }
+    
+    nav a{
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+    }
+    .open-sidebar-button, .close-sidebar-button{
+    padding: 20px;
+    display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+    right: 0;
+    }
+#sidebar-active:checked ~ #overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    }
+
+    nav a:hover{
+        color: white;
+    }
+/*---end of navbar---*/
+
+/*---tasty food section section ----*/
+
+#tasty h1{
+    font-size: 30px;
+    color: green;
+    margin-bottom: 20px;
+}
+.tastymore p{
+    color: black;
+    font-size: 40px;
+    line-height: 1.6;
+}
+
+/*---about us part---*/
+.moretastyimg{
+    width: 100%;
+    height:auto;
+}
+#moretasty h1{
+    font-size: 30px;
+}
+/*---the part that will arrange the h, p and img---*/
+.foodtasty{
+    display:block;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+/*---end of tasty food section--*/
+
+#tasty h1{
+    font-size: 35px;
+}
+.tastymore p{
+    font-size: 20px;
+    line-height: 1.3;
+}
+.btn{
+    font-size: 10px;
+}
+
+/*---service----*/
+.amazing{
+    display:block;
+}
+#offering{
+    padding-top: 80px;
+}
+
+.menu{
+    flex-direction: column;
+}
+.menu-grid{
+    display: block;
+}
+.footer{
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+}
